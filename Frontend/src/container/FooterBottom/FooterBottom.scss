@@ -1,0 +1,209 @@
+.app__FooterBottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 0.1rem 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.app__FooterBottom-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 5%;
+
+    img {
+        width: 90px;
+        height: 20px;
+
+        @media screen and (min-width: 2000px) {
+            width: 180px;
+            height: 40px;
+        }
+    }
+
+
+}
+
+.app__FooterBottom-links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    list-style: none;
+
+    li {
+        margin: 1rem 2rem;
+        cursor: pointer;
+
+        flex-direction: column;
+
+        div {
+            width: 5px;
+            height: 5px;
+            background: transparent;
+            border-radius: 50%;
+
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: var(--gray-color);
+            text-decoration: none;
+            flex-direction: row;
+
+            text-transform: uppercase;
+            font-weight: 500;
+
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                color: var(--secondary-color);
+            }
+        }
+
+        &:hover {
+            div {
+                background: var(--secondary-color);
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        display: inline;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            margin-left: -10%;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+
+        margin-left: -10%;
+
+    }
+}
+
+.app__flex-footerBottom {
+    display: flex;
+    margin-top: 0.4rem;
+    padding: 1rem 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.app__flex-footerBottom .p-text {
+    text-transform: uppercase;
+}
+
+// .app__social-footerBottom {
+//     width: 100%;
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
+//     padding: 0.1rem 2rem;
+//     border: 1px solid rgba(255, 255, 255, 0.18);
+//     margin-top: 2%;
+// }
+
+// .app__social-left {
+//     display: flex;
+//     justify-content: flex-start;
+//     align-items: center;
+//     margin-top: 2%;
+// }
+
+// .app__social-right {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 100%;
+
+//     padding: 1rem;
+
+//     div {
+//         width: 40px;
+//         height: 40px;
+//         border-radius: 50%;
+//         background-color: var(--white-color);
+//         margin: 0.25rem 0.6rem;
+//         border: 1px solid var(--lightGray-color);
+
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+
+//         transition: all 0.3s ease-in-out;
+
+//         svg {
+//             width: 15px;
+//             height: 15px;
+//             color: var(--gray-color);
+//         }
+
+//         &:hover {
+//             background-color: var(--secondary-color);
+//             border-color: var(--secondary-color);
+
+//             svg {
+//                 color: var(--white-color);
+//             }
+//         }
+
+//         @media screen and (min-width: 2000px) {
+//             width: 70px;
+//             height: 70px;
+
+//             margin: 0.5rem 0;
+
+//             svg {
+//                 width: 30px;
+//                 height: 30px;
+//             }
+//         }
+//     }
+// }
+.app__social-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    width: 20%;
+    margin-top: 5%;
+
+    div {
+        height: 45px;
+        width: 45px;
+        transition: all 0.3s ease-in-out;
+        background: var(--white-color);
+        margin: 0.25rem 0.6rem;
+        border: 1px solid var(--lightGray-color);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            color: var(--gray-color);
+        }
+
+        &:hover {
+            background-color: var(--secondary-color);
+            border-color: var(--secondary-color);
+
+            svg {
+                color: var(--white-color);
+            }
+        }
+    }
+
+    @media screen and (max-width:900px) {
+        width: 50%;
+    }
+
+}
